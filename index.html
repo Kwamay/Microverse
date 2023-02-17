@@ -3,27 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-
-  <body>
-    
-    
-    <h1 id="title" class="micro">Microverse Survey Form</h1>
- <p id="description">It's all because of you that we got this far.Thank you!</p>
- <div class="meah">
- <form id="survey-form">
-   <label id="name-label"class="name">Name</label>
+    <link rel="stylesheet" href="css\style.css"/>
+<body>
+ <div id="header"><h1 id="title">Microverse Survey Form</h1>
+  <p id="description">It's all because of you that we got this far.Thank you!</p>
+ </div>
+  <form id="survey-form">
+   <label id="name-label">Name</label>
    <br>
-   <input id="name" type="text" placeholder="Enter your name">
+   <input id="name" type="text" placeholder="Enter your name" required>
    <br>
    <label id="email-label" >Email</label>
    <br>
-   <input id="email" type="email" placeholder="Enter your email">
+   <input id="email" type="email" placeholder="Enter your email" required>
    <br>
    <label id="number-label">Age</label>
    <br>
-     <input id="number" type="number" placeholder="Enter your age">
+     <input id="number" type="number" placeholder="Enter your age" min=15 max=125 >
      <br>
      <label>What's your occupation</label>
      <br>
@@ -37,51 +33,52 @@
      <br>
      <label>Are you willing to work with Microverse</label>
      <br>
-     <input name="a" type="radio"> 
+     <input value="Absolutely" name="decision" type="radio"> 
      <label>Absolutele</label>
      <br>
-     <input name="a" type="radio">
+     <input value="Mayb" name="decision" type="radio">
      <label>Maybe</label>
      <br>
-     <input name="a" type="radio">
+     <input value="Not sure" name="decision" type="radio">
      <label>Not sure</label>
      <br>
      <legend>what pragramming languages do you prefer(choose all that apply)</legend>
      <br>
-     <input value="a" type="checkbox">
+     <input value="javascript" type="Checkbox">
      <label>javascript</label>
      <br>
-     <input value="a" type="checkbox">
+     <input value="python" type="checkbox">
      <label>python</label>
      <br>
-      <input value="a" type="checkbox">
+      <input value="C++" type="checkbox">
       <label>C++</label>
      <br>
-        <input value="a" type="checkbox">
+        <input value="React" type="checkbox">
         <label>React</label>
      <br>
-       <input value="a" type="checkbox">
+       <input value="Angular" type="checkbox">
        <label>Angular</label>
      <br>
-       <input value="a" type="checkbox">
+       <input value="php" type="checkbox">
        <label>php </label>
      <br>
-       <input value="a" type="checkbox">
+       <input value="swift" type="checkbox">
        <label>swift</label>
      <br>
-       <input value="a" type="checkbox">
+       <input value="visual basic" type="checkbox">
        <label>visual basic</label>
      <br>
-     <textarea class="text" placeholder="Add comment"></textarea>
+     <div id="bottom">
+     <textarea placeholder="Add comment"></textarea>
        <br>
-       <button id="submit" class="submit-button">submit</button>
-
+       <button id="submit" type="submit">submit</button>
+        </div>
 
  </form>
- </div>
-    
+</body>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <script  src="js/index.js"></script>
-  </body>
 </html>
+nn
